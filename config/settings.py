@@ -30,19 +30,26 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['eightsoft.com', '.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    # Apps
     'accounts.apps.AccountsConfig',
+
+    # Default
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Adding social authentication to your site
+    'social_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +152,8 @@ LOGOUT_URL = 'logout'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+# Adding social authentication to your site
+# SOCIAL_AUTH_FACEBOOK_KEY = 'XXXX' # (Facebook App ID)
+# SOCIAL_AUTH_FACEBOOK_SECRET = 'XXXX' # (Facebook App Secret)

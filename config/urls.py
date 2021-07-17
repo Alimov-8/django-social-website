@@ -20,8 +20,14 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Authentication 
     path('accounts/', include('accounts.urls')),
     path('', include('django.contrib.auth.urls')),
+
+    # Adding social authentication to your site
+    path('social-auth/', 
+        include('social_django.urls', namespace='social')),
 ] 
 
 if settings.DEBUG:
