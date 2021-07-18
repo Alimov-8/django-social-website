@@ -25,6 +25,7 @@
     log in.
     
   ### 3. Sharing Content on Your Website
+    Creating an image bookmarking website
     • Building the image model
     • Creating many-to-many relationships
     • Registering the image model in the administration site
