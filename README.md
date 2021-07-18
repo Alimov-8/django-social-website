@@ -4,6 +4,7 @@
     • Setup Dev Environment
     • Playing with Django
  ### 2. Authentication System 
+  ##### Commits:
     • Register 
     • Log in / Log out
     • Edit Profile, 
@@ -25,6 +26,7 @@
     log in.
     
   ### 3. Sharing Content on Your Website
+   ##### Commits:
     Creating an image bookmarking website
     • Building the image model
     • Creating many-to-many relationships
