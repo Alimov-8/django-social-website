@@ -30,6 +30,11 @@
     • Creating many-to-many relationships
     • Registering the image model in the administration site
     
+    Posting content from other websites
+    • Cleaning form fields
+    • Overriding the save() method of a ModelForm
+    • Building a bookmarklet with jQuery
+    
    ##### Topics:
     • Creating many-to-many relationships
     • Customizing behavior for forms
