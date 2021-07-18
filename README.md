@@ -1,9 +1,9 @@
 # django-social-website
 
- ### Getting Started
+ ### 1. Getting Started
     • Setup Dev Environment
     • Playing with Django
- ### Authentication System 
+ ### 2. Authentication System 
     • Register 
     • Log in / Log out
     • Edit Profile, 
@@ -24,8 +24,10 @@
     so that users can use their existing Facebook, Twitter, or Google account to
     log in.
     
-  ### Sharing Content on Your Website
+  ### 3. Sharing Content on Your Website
     • Building the image model
+    • Creating many-to-many relationships
+    • Registering the image model in the administration site
     
    ##### Topics:
     • Creating many-to-many relationships
