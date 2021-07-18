@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['eightsoft.com', '.herokuapp.com', 'localhost', '127.0.0.1']
 INSTALLED_APPS = [
     # Apps
     'accounts.apps.AccountsConfig',
+    'images.apps.ImagesConfig',
 
     # Default
     'django.contrib.admin',
