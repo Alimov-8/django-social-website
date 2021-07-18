@@ -3,7 +3,7 @@ from django.conf import settings
 
 # Create your models here.
 class Image(models.Model):
-    user = models.ForeignKey(settings.AUTH_USR_MODEL,
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,
                                 related_name='images_created',
                                 on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
@@ -12,8 +12,18 @@ class Image(models.Model):
     url = models.URLField()
     image = models.ImageField(upload_to='users/%Y/%m/%d/')
     description = models.TextField(blank=True)
-    created = models.DateField(auto_new_add=True,
+    created = models.DateField(auto_now_add=True,
                                 db_index=True)
+
+    # The ManyToManyField fields provide a many-to-many manager that allows you to
+    # retrieve related objects, such as image.users_like.all(), or get them from
+    # a user object, such as user.images_liked.all().
+    users_like = models.ManyToManyField(settings.AUTH_USER_MODEL,
+                                            related_name='images_liked',
+                                            blank=True)
+
+    def __str__(self):
+        return self.title
 
     # In the preceding code, the slugify() function provided by Django to
     # automatically generate the image slug for the given title when no slug is provided.
