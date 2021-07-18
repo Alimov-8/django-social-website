@@ -3,7 +3,7 @@
  ### Getting Started
     • Setup Dev Environment
     • Playing with Django
-  ### Authentication System 
+ ### Authentication System 
     • Register 
     • Log in / Log out
     • Edit Profile, 
@@ -24,7 +24,10 @@
     so that users can use their existing Facebook, Twitter, or Google account to
     log in.
     
-  ### Creating & Sharing the Contents 
+  ### Sharing Content on Your Website
+    • Building the image model
+    
+   ##### Topics:
     • Creating many-to-many relationships
     • Customizing behavior for forms
     • Using jQuery with Django
@@ -33,6 +36,3 @@
     • Implementing AJAX views and integrating them with jQuery
     • Creating custom decorators for views
     • Building AJAX pagination
-    
-   ##### Topics:
-    • ....
