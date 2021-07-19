@@ -2,7 +2,10 @@
 {% block title %}{{ image.title }}{% endblock %}
 {% block content %}
     <h1>{{ image.title }}</h1>
-    <img src="{{ image.image.url }}" class="image-detail">
+    {% load thumbnail %}
+    <a href="{{ image.image.url }}">
+        <img src="{% thumbnail image.image 300x0 quality=85 %}" class="image-detail">
+    </a>
     {% with total_likes=image.users_like.count %}
         <div class="image-info">
             <div>
@@ -11,8 +14,8 @@
                 </span>
             </div>
             {{ image.description|linebreaks }}
-        </div>
-        <div class="image-likes">
+
+            <div class="image-likes">
             {% for user in image.users_like.all %}
                 <div>
                     <img src="{{ user.profile.photo.url }}">

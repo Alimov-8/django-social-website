@@ -51,6 +51,9 @@ INSTALLED_APPS = [
     # Adding social authentication to your site
     'social_django',
     'django_extensions',
+
+    # Image resizing, qulity change 
+    'easy_thumbnails',
 ]
 
 MIDDLEWARE = [
