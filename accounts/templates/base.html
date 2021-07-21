@@ -7,14 +7,14 @@
 </head>
 <body>
     <div id="header">
-        <span class="logo">EightSoft</span>
+        <a href="{% url 'dashboard' %}"><span class="logo">EightSoft</span></a>
         {% if request.user.is_authenticated %}
             <ul class="menu">
                 <li {% if section == "dashboard" %} class="selected"{% endif %}>
                     <a href="{% url 'dashboard' %}">My dashboard</a>
                 </li>
                 <li {% if section == 'images' %}class="selected"{% endif %}>
-                    <a href="#">Images</a>
+                    <a href="{% url 'images:list' %}">Images</a>
                 </li>
                 <li {% if section == 'people' %} class="selected"{% endif %}>
                     <a href="#">People</a>

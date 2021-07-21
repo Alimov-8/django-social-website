@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Authentication 
-    path('accounts/', include('accounts.urls')),
+    path('', include('accounts.urls')),
     path('', include('django.contrib.auth.urls')),
 
     # Adding social authentication to your site
