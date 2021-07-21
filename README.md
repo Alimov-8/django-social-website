@@ -41,7 +41,7 @@
     Creating a detail view for images 
     Creating image thumbnails using easy-thumbnails 
     Adding AJAX actions with jQuery (Like button)
-    Creating custom decorators for your views <----------------------- DOING 
+    Creating custom decorators for your views
     Adding AJAX pagination to your list views
     
    ##### Topics:
