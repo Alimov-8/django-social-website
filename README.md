@@ -61,3 +61,30 @@
     Covered the creation of image thumbnails using the easy-thumbnails
     library. Finally, Implemented AJAX views with jQuery and added AJAX
     pagination to the image list view.
+    
+    
+   ### 4. Tracking User Actions
+   ##### Commits:
+    ...
+    • ...
+    
+    
+   ##### Topics:
+    • Building a follow system
+    • Creating many-to-many relationships with an intermediary model
+    • Creating an activity stream application
+    • Adding generic relations to models
+    • Optimizing QuerySets for related objects
+    • Using signals for denormalizing counts
+    • Storing item views in Redis
+    
+   ##### Summary:
+    Built a follow system using many-to-many relationships with an
+    intermediary model. Created an activity stream using generic relations and
+    you optimized QuerySets to retrieve related objects. Then introduced
+    Django signals, and created a signal receiver function to denormalize
+    related object counts. Covered application configuration classes, which used
+    to load your signal handlers. Also learned how to install and configure Redis
+    in Django project. Finally, used Redis in project to store item views,
+    and built an image ranking with Redis.
+
