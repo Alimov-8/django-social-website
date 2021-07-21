@@ -39,9 +39,9 @@
     • Building a bookmarklet with jQuery 
     
     Creating a detail view for images 
-    Creating image thumbnails using easy-thumbnails <----------------------- DOING 
-    Adding AJAX actions with jQuery
-    Creating custom decorators for your views
+    Creating image thumbnails using easy-thumbnails 
+    Adding AJAX actions with jQuery (Like button)
+    Creating custom decorators for your views <----------------------- DOING 
     Adding AJAX pagination to your list views
     
    ##### Topics:
