@@ -65,8 +65,10 @@
     
    ### 4. Tracking User Actions
    ##### Commits:
-    ...
-    • ...
+    Building a follow system
+    • Creating many-to-many relationships with an intermediary model
+    • Creating list and detail views for user profiles
+    • Building an AJAX view to follow users
     
     
    ##### Topics:
