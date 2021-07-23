@@ -11,6 +11,7 @@ from actions.utils import create_action
 
 from django.contrib.auth.models import User
 from .models import Profile, Contact
+from actions.models import Action
 from .forms import LoginForm, UserRegistrationForm, \
                     UserEditForm, ProfileEditForm
 
@@ -38,7 +39,14 @@ def user_login(request):
 
 @login_required
 def dashboard(request):
-    return render(request, 'accounts/dashboard.html', {'section': 'dashboard'})
+    # Display all actions by default
+    actions = Action.objects.exclude(user=request.user)
+    following_ids = request.user.following.values_list('id', flat=True)
+    if following_ids:
+        # If user is following others, retrieve only their actions
+        actions = actions.filter(user_id__in=following_ids)
+    actions = actions[:10]
+    return render(request, 'accounts/dashboard.html', {'section': 'dashboard', 'actions': actions})
 
 
 def register(request):
