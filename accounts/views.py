@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from common.decorators import ajax_required
-
+from actions.utils import create_action
 
 from django.contrib.auth.models import User
 from .models import Profile, Contact
@@ -53,6 +53,7 @@ def register(request):
             new_user.save()
             # Create the user profile
             Profile.objects.create(user=new_user)
+            create_action(new_user, 'has created an account')
         return render(request, 'accounts/register_done.html', {'new_user': new_user})
 
     else:
@@ -129,6 +130,7 @@ def user_follow(request):
                 Contact.objects.get_or_create(
                             user_from=request.user,
                             user_to=user)
+                create_action(request.user, 'is following', user)
             else:
                 Contact.objects.filter(user_from=request.user,
                                 user_to=user).delete()
