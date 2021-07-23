@@ -66,9 +66,17 @@
    ### 4. Tracking User Actions
    ##### Commits:
     Building a follow system
-    • Creating many-to-many relationships with an intermediary model
-    • Creating list and detail views for user profiles
-    • Building an AJAX view to follow users
+    • Creating many-to-many relationships with an intermediary model (Following system model)
+    • Creating list and detail views for user profiles 
+    • Building an AJAX view to follow users (Follow/Unfollow button client side views)
+    Building a generic activity stream application
+    • Using the contenttypes framework
+    • Adding generic relations to your models
+    • Avoiding duplicate actions in the activity stream
+    • Adding user actions to the activity stream
+    • Displaying the activity stream
+    • Optimizing QuerySets that involve related objects
+    
     
     
    ##### Topics:
