@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 from environs import Env 
+from django.urls import reverse_lazy
 
 # Environmental variables
 env = Env() 
@@ -147,6 +148,12 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# get_absolute_url() on a User instance to retrieve its corresponding URL
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail',
+    args=[u.username])
+}
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
