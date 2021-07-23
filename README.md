@@ -66,17 +66,27 @@
    ### 4. Tracking User Actions
    ##### Commits:
     Building a follow system
-    • Creating many-to-many relationships with an intermediary model (Following system model)
-    • Creating list and detail views for user profiles 
-    • Building an AJAX view to follow users (Follow/Unfollow button client side views)
+     • Creating many-to-many relationships with an intermediary model (Following system model)
+     • Creating list and detail views for user profiles 
+     • Building an AJAX view to follow users (Follow/Unfollow button client side views)
     Building a generic activity stream application
-    • Using the contenttypes framework
-    • Adding generic relations to your models
-    • Avoiding duplicate actions in the activity stream
-    • Adding user actions to the activity stream
-    • Displaying the activity stream
-    • Optimizing QuerySets that involve related objects
-    
+     • Using the contenttypes framework (to add target "X bookmarked Y" Generic Foregin Key)
+     • Adding generic relations to your models
+     • Avoiding duplicate actions in the activity stream (validation for activities)
+     • Adding user actions to the activity stream 
+     • Displaying the activity stream
+     • Optimizing QuerySets that involve related objects
+     • Using prefetch_related()
+    Using signals for denormalizing counts
+     • Working with signals
+     • Application configuration classes
+    Using Redis for storing item views
+     • Installing Redis
+     • Using Redis with Python
+     • Storing item views in Redis
+     • Storing a ranking in Redis
+     • Next steps with Redis
+
     
     
    ##### Topics:
