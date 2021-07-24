@@ -85,7 +85,7 @@
      • Application configuration classes
   
     Using Redis for storing item views
-     • Installing Redis
+     • Installing Redis [https://github.com/microsoftarchive/redis/releases] [https://youtu.be/188Fy-oCw4w]
      • Using Redis with Python
      • Storing item views in Redis
      • Storing a ranking in Redis
