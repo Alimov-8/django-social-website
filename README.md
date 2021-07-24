@@ -79,10 +79,11 @@
      • Optimizing QuerySets that involve related objects
      • Using prefetch_related()
      
-    Using signals for denormalizing counts
-     • Working with signals
+    Using signals for denormalizing counts. 
+       (Denormalization is making data redundant in such a way that it optimizes read performance)
+     • Working with signals (Signals can be used for updating denormalization data)
      • Application configuration classes
-     
+  
     Using Redis for storing item views
      • Installing Redis
      • Using Redis with Python
