@@ -165,7 +165,11 @@ LOGOUT_URL = 'logout'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-
 # Adding social authentication to your site
 # SOCIAL_AUTH_FACEBOOK_KEY = 'XXXX' # (Facebook App ID)
 # SOCIAL_AUTH_FACEBOOK_SECRET = 'XXXX' # (Facebook App Secret)
+
+# Redis DB
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
