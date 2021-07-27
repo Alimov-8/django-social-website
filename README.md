@@ -1,6 +1,7 @@
 # django-social-website 
 ### Testing 🔗 http://alimov8.pythonanywhere.com/
-
+### 📚 Build powerful and reliable Python web application from scratch (Antonio Mele) 
+#
  ### Getting Started
     • Setup Dev Environment
     • Playing with Django
