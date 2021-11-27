@@ -1,13 +1,12 @@
-# django-social-website 
-### Testing 🔗 http://alimov8.pythonanywhere.com/
-### 📚 Build powerful and reliable Python web application from scratch (Antonio Mele) 
-#
- ### Getting Started
+# Social Website - Image Bookmarking System 
+#### http://alimov8.pythonanywhere.com/
+#### Build powerful and reliable Python web application from scratch by Antonio Mele 📚
+
+
+ #### 1. Authentication System 
+  ##### ↪️ Commits:
     • Setup Dev Environment
     • Playing with Django
- #
- ### 1. Authentication System 
-  ##### ↪️ Commits:
     • Register 
     • Log in / Log out
     • Edit Profile, 
@@ -28,7 +27,7 @@
     so that users can use their existing Facebook, Twitter, or Google account to
     log in.
   #
-  ### 2. Sharing Content on Website 
+  #### 2. Sharing Content on Website 
    ##### ↪️ Commits:
     Creating an image bookmarking website
     • Building the image model
@@ -65,7 +64,7 @@
     pagination to the image list view.
     
     
-   ### 3. Tracking User Actions
+   #### 3. Tracking User Actions
    ##### ↪️ Commits:
     Building a follow system
      • Creating many-to-many relationships with an intermediary model (Following system model)
